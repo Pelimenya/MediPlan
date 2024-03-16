@@ -1,0 +1,23 @@
+﻿<Window x:Class="MediPlan.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MediPlan"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dg" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия пациента" Binding="{Binding PatientName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Фамилия Врача" Binding="{Binding DocName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Тип приёма" Binding="{Binding TypeName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Начало приёма врача" Binding="{Binding DocStartTime}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Окончание приёма врача" Binding="{Binding DocEndTime}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Окончание приёма врача" Binding="{Binding EventStart}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Окончание приёма врача" Binding="{Binding Patient}"></DataGridTextColumn>
+                
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
